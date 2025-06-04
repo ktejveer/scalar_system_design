@@ -13,7 +13,7 @@ public class BankAccount {
     }
 
     public void withdraw(int amount){
-        if(amount > balance){
+        if(amount > balance && amount > 0){
             System.out.println("Insufficient balance");
         }else{
             balance = balance - amount;
